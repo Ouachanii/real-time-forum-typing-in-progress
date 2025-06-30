@@ -1,0 +1,18 @@
+@import url("variables.css");
+
+@import url("base.css");
+
+@import url("layout.css");
+
+/* Import common elements */
+@import url("forms.css");
+@import url("buttons.css");
+
+/* Import specific component styles */
+@import url("auth.css");
+@import url("posts.css");
+@import url("chat.css");
+@import url("popups.css");
+
+/* Import responsive adjustments last */
+@import url("responsive.css");

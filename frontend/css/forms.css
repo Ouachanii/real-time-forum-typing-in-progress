@@ -1,0 +1,204 @@
+
+.form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .auth-form .form-group {
+    margin-bottom: 0.75rem;
+  }
+  
+  .form-group label,
+  .auth-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text);
+  }
+  
+  /* General Input/Select/Textarea */
+  .auth-form input,
+  .auth-form select,
+  .form-group input,
+  .form-group textarea,
+  .filter-container select,
+  input[id^="input-"] /* Chat input */ {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    transition: var(--transition);
+    /* Note: Default background removed */
+  }
+  
+  .auth-form input:focus,
+  .auth-form select:focus,
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .filter-container select:focus,
+  input[id^="input-"]:focus /* Chat input focus */ {
+    border-color: var(--primary);
+    outline: none;
+    /* Note: Background and shadow fixes removed */
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+  }
+  
+  /* Textarea specifics */
+  .form-group textarea,
+  .comment-form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .comment-form textarea {
+     width: 100%;
+     padding: 0.8rem;
+     border: 1px solid #ddd;
+     border-radius: var(--radius);
+     margin-bottom: 1rem;
+     transition: var(--transition);
+  }
+  
+  .comment-form textarea:focus {
+     border-color: var(--primary);
+     outline: none;
+     box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: var(--danger);
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+    display: none; /* Shown by JS */
+  }
+  
+  /* Password Input Wrapper */
+  .password-wrapper {
+    position: relative;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 8px; /* Keep padding for click area */
+    color: var(--text-muted);
+    cursor: pointer;
+    border-radius: 50%;
+    /* Removed transition */
+    display: flex;         /* Added for icon centering */
+    align-items: center;   /* Added for icon centering */
+    justify-content: center;/* Added for icon centering */
+  }
+  
+  .password-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .auth-form input[type="password"] {
+    padding-right: 40px; /* Space for toggle button */
+  }
+  
+  /* Post Form */
+  .post-form {
+    background-color: var(--white);
+    padding: clamp(1.5rem, 5vw, 2rem);
+    margin-bottom: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  /* Comment Form */
+  .comment-form {
+    margin: 1.5rem 0;
+  }
+  
+  /* Category Checkboxes (in Post Form) */
+  .category-checkboxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .category-checkboxes label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--text);
+    background-color: var(--gray-light);
+    padding: 8px 12px;
+    border-radius: var(--radius);
+    border: 1px solid #ddd;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  
+  .category-checkboxes label:hover {
+    background-color: rgba(67, 97, 238, 0.1);
+    border-color: var(--primary);
+  }
+  
+  .category-checkboxes input[type="checkbox"] {
+    accent-color: var(--primary);
+    transform: scale(1.2);
+  }
+  
+  /* Filter Container */
+  .filter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .filter-container label {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 5px;
+  }
+  
+  .filter-container select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: var(--text);
+    border: 1px solid #ddd;
+    border-radius: var(--radius);
+    background-color: var(--gray-light);
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  
+  .filter-container select:focus {
+    border-color: var(--primary);
+    outline: none;
+    background-color: var(--white);
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+  }
+  
+  /* Chat Input - Belongs here logically but styled separately */
+  .chat-input {
+    flex-grow: 1;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: var(--radius);
+    margin-right: 10px;
+    transition: var(--transition);
+  }
+  
+  .chat-input:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+  }

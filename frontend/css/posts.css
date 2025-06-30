@@ -1,0 +1,143 @@
+.post {
+    background-color: var(--white);
+    padding: clamp(1.25rem, 5vw, 1.5rem);
+    margin-bottom: clamp(1rem, 3vw, 2rem);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+  }
+  
+  .post:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-3px);
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .post-header img,
+  .comment-avatar {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .post-header img { /* Post avatar size */
+     width: 36px;
+     height: 36px;
+  }
+  
+  .author-time-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .author,
+  .comment-author {
+    color: var(--text);
+    font-weight: 500;
+    margin: 0;
+    overflow-wrap: break-word; /* Added */
+    word-wrap: break-word;     /* Added */
+  }
+  
+  .post-time,
+  .comment-time {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+  
+  .post-title {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    margin-bottom: 0.5rem;
+    color: var(--text);
+    font-weight: 600;
+    overflow-wrap: break-word; /* *** ADDED *** */
+    word-wrap: break-word;   
+  }
+  
+  .post-categories {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .category-tag {
+    background-color: rgba(67, 97, 238, 0.1);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--primary);
+    font-weight: 500;
+  }
+  
+  .post-content {
+    color: var(--text);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    overflow-wrap: break-word; /* *** ADDED *** */
+    word-wrap: break-word;     /* Older alias for compatibility */
+  }
+  
+  /* Like/Dislike Counts */
+  .stats {
+     font-size: 0.9rem;
+     color: var(--text-muted);
+     margin-bottom: 1rem;
+     margin-top: 1rem; /* Added for spacing */
+  }
+  
+  /* Interaction Bar (Holds Like/Dislike/Comment buttons) */
+  .interaction-bar {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    flex-wrap: wrap;
+  }
+  
+  /* Comments Section */
+  .comments-section {
+    margin-top: 2rem;
+    /* display: none; controlled by JS */
+  }
+  
+  /* Individual Comment */
+  .comment {
+    background-color: var(--gray-light);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: var(--radius);
+    transition: var(--transition);
+  }
+  
+  .comment:hover {
+    background-color: rgba(67, 97, 238, 0.05);
+  }
+  
+  .comment-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  
+  .comment-avatar {
+    width: 32px; /* Slightly smaller than post avatar */
+    height: 32px;
+  }
+  
+  .comment-content {
+     color: var(--text);
+     line-height: 1.7; /* Slightly different line height if desired */
+     margin-bottom: 1rem;
+     overflow-wrap: break-word; /* *** ADDED *** */
+     word-wrap: break-word;     /* Older alias for compatibility */
+  }

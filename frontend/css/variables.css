@@ -1,0 +1,84 @@
+:root {
+    --primary: #4361ee;
+    --primary-dark: #3a56d4;
+    --secondary: #4cc9f0;
+    --gray: #6c757d;
+    --gray-light: #f8f9fa;
+    --gray-dark: #343a40;
+    --danger: #ef476f;
+    --success: #06d6a0;
+    --warning: #ffd166;
+    --text: #212529;
+    --text-muted: #6c757d;
+    --bg: #f8f9fa;
+    --white: #ffffff;
+    --radius-sm: 0.25rem;
+    --radius: 0.5rem;
+    --radius-lg: 1rem;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --transition: all 0.3s ease;
+    --container-padding: clamp(1rem, 5vw, 2rem);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --primary: #4cc9f0;
+      --primary-dark: #3ab4d9;
+      --text: #e9ecef;
+      --text-muted: #adb5bd;
+      --bg: #121212;
+      --white: #1e1e1e;
+      --gray-light: #2a2a2a;
+      --gray-dark: #0a0a0a;
+      --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.7);
+    }
+  
+    .auth-form input,
+    .auth-form select,
+    .form-group input,
+    .form-group textarea,
+    .filter-container select,
+    .chat-input { 
+      background-color: #2a2a2a;
+      color: var(--text);
+      border-color: #444;
+    }
+  
+    .auth-form input:focus,
+    .auth-form select:focus,
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .filter-container select:focus,
+    .chat-input:focus {
+      background-color: #333;
+      border-color: var(--primary);
+    }
+  
+    .sent-message {
+      background: rgba(76, 201, 240, 0.25);
+    }
+  
+    .received-message {
+      background: #333;
+    }
+  
+    .category-tag {
+      background-color: rgba(76, 201, 240, 0.2);
+    }
+  
+    .comment {
+      background-color: #2a2a2a;
+    }
+  
+    .comment:hover {
+      background-color: #333;
+    }
+  
+    .post:hover {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); 
+    }  
+}

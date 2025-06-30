@@ -1,0 +1,69 @@
+
+/* Main Content Area (when logged in) */
+.main-content {
+    display: none;
+    flex-direction: column;
+    gap: clamp(1rem, 3vw, 1.5rem);
+    padding: var(--container-padding);
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) minmax(0, 3fr);
+    gap: clamp(1rem, 3vw, 1.5rem);
+  }
+  
+  .header {
+    background-color: var(--white);
+    box-shadow: var(--shadow-sm);
+    border-radius: var(--radius);
+    padding: 1rem var(--container-padding);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Match main content width */
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: clamp(1.5rem, 3vw, 1.8rem);
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+  }
+  
+  /* Main content container (holds posts/filters) */
+  .container {
+    flex-grow: 1;
+    background-color: var(--white);
+    padding: clamp(1rem, 5vw, 1.5rem);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--gray-dark);
+    color: var(--white);
+    padding: 2rem 0;
+    margin-top: auto; /* Pushes footer to bottom */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: #ccc;
+  }
