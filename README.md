@@ -53,7 +53,7 @@ frontend/
 1. **Clone the repository**
    ```sh
    git clone https://github.com/Ouachanii/real-time-forum-typing-in-progress.git
-   cd real-time-forum
+   cd real-time-forum-typing-in-progress
    ```
 
 2. **Install Go dependencies**
